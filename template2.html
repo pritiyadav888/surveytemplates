@@ -1,0 +1,77 @@
+<link rel="stylesheet" type="text/css" href="template2.css">
+	<style type="text/css"></style>
+<main>
+  <header class="header">
+    <h1 id="title">Coding Abilities Survey</h1>
+    <p id="description">Let us know how you've been doing.</p>
+  </header>
+  <form class="survey" id="survey-form">
+    <div class="survey-question">
+      <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      <label for="name" id="name-label">Full Name: (Required)</label>
+    </div>
+    <div class="survey-question">
+      <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      <label for="email" id="email-label">Email Address: (Required)</label>
+    </div>
+    <div class="survey-question">
+      <input type="number" name="age" id="number" placeholder="Age" min="18" max="120">
+      <label for="age" id="number-label">Age:</label>
+    </div>
+    <div class="survey-question">
+      <select name="status" id="dropdown">
+        <option selected value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+        <option value="css">C#</option>
+        <option value="js">Java</option>
+      </select>
+      <label for="status">What is your preffered programming language? (Required)</label>
+    </div>
+    <div class="survey-block">
+      <p>Which of these are you best at?</p>
+      <label class="radio">HTML
+        <input type="radio" name="skill" value="html">
+        <span class="radio-button"></span>
+      </label>
+      <label class="radio">CSS
+        <input type="radio" name="skill" value="css">
+        <span class="radio-button"></span>
+      </label>
+      <label class="radio">JavaScript
+        <input type="radio" name="skill" value="javascript">
+        <span class="radio-button"></span>
+      </label>
+      <label class="radio">Design
+        <input type="radio" name="skill" value="design">
+        <span class="radio-button"></span>
+      </label>
+    </div>
+    <div class="survey-block">
+      <p>Where would you like to improve your skills?</p>
+      <label class="check">HTML
+        <input type="checkbox" value="html">
+        <span class="checkmark"></span>
+      </label>
+      <label class="check">CSS
+        <input type="checkbox" value="css">
+        <span class="checkmark"></span>
+      </label>
+      <label class="check">JavaScript
+        <input type="checkbox" value="javascript">
+        <span class="checkmark"></span>
+      </label>
+      <label class="check">Design
+        <input type="checkbox" value="design">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+    <div class="survey-question">
+      <textarea id="comments"></textarea>
+      <label for="comments">Do you have any additional comments to add in?</label>
+    </div>
+    <div class="button-container">
+      <button type="submit" id="submit">Submit Survey</button>
+    </div>
+  </form>
+</main>
