@@ -1,2 +1,2 @@
 
-<?php include_once("Template.html"); ?>
+<?php include_once("template2.html"); ?>
